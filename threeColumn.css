@@ -1,0 +1,72 @@
+html,body
+{
+    width:100%;
+    height: 100%;
+    text-align: center;
+}
+.container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 100%; 
+    border: 2px solid black;
+
+}
+
+.column{
+    display: flex;
+    border: 2px solid black;
+    width: 80%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container :nth-child(1){
+    background-color: red;
+}
+.container :nth-child(2){
+    background-color: blue;
+}
+.container :nth-child(3){
+    background-color: yellow;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .container :nth-child(1){
+        background-color: green;
+    }
+    .container :nth-child(2){
+        background-color: green;
+    }
+    .container :nth-child(3){
+        background-color: green;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .container :nth-child(1){
+        background-color: orange;
+    }
+    .container :nth-child(2){
+        background-color: orange;
+    }
+    .container :nth-child(3){
+        background-color: orange;
+    }
+}
+
+@media only screen and (min-width: 1281px) {
+    .container :nth-child(1){
+        background-color: purple;
+    }
+    .container :nth-child(2){
+        background-color: purple;
+    }
+    .container :nth-child(3){
+        background-color: purple;
+    }
+}
+

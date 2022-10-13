@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50%;
+    width: 500px;
+    height: 500px;
+}
